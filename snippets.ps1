@@ -25,6 +25,5 @@ Get-GitHubUser -Current #User die ingelogd is
 
 
 Set-GitHubProfile -Company 'AP Hogeschool'
-$repo = New-GitHubRepository `
--RepositoryName test-from-pwsh
+$repo = New-GitHubRepository ` -RepositoryName test-from-pwsh
 
