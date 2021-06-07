@@ -1,4 +1,4 @@
-﻿$ss_token = Read-Host -AsSecureString -Prompt ’token’ | # Secure string
+﻿Read-Host -AsSecureString -Prompt ’token’ | # Secure string
 #prompt gebruiker invullen token
 
 ConvertFrom-SecureString | #convert secure string
@@ -38,5 +38,5 @@ $Body =
 
 
 Invoke-RestMethod -Headers $headers -Uri https://api.github.com/user -body $Body -Method Post # POST is always for creating a resource
-Get-GitHubUser -Current
+Get-GitHubUser -Current #current user laten zien
 #PATCH is always for update a resource.
