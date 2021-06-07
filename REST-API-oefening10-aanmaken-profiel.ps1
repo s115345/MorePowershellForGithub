@@ -38,4 +38,5 @@ $Body =
 
 
 Invoke-RestMethod -Headers $headers -Uri https://api.github.com/user -body $Body -Method Post # POST is always for creating a resource
+Get-GitHubUser -Current
 #PATCH is always for update a resource.
