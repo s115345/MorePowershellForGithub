@@ -18,9 +18,9 @@
     $global:api = "https://api.github.com/user"
     $global:headers = 
     @{
-        Authorization = 'Basic  $Encoding'; };
-        return $headers
-        
+        Authorization = "Basic $Encoding"; 
+        return = $headers
+        };
     
 
     Invoke-RestMethod -Headers $headers -Uri $api
